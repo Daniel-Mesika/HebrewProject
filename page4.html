@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ניקוד ומילות יחס</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color:black;
+  color:green;
+  padding: 5px;
+  text-align:center;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: green;
+  color:black;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color:black;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+#img1 {
+    position: absolute;
+    left: 40px;
+    top: 350px;
+    width: 400px;
+    height: 500px;
+}
+li {
+    text-align: center;
+}
+.span-title {
+    position: absolute;
+    right: 170px;
+    color: green;
+    font-size: 30px;
+}
+#div-1 {
+    position: absolute;
+    right: 15px;
+    font-size: 25px;
+}
+#div-2 {
+    position: absolute;
+    right: 780px;
+    font-size: 22px;
+}
+table {
+border-collapse: collapse;
+  width: 500px;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: green;
+  color: white;
+}
+</style>
+</head>
+<body dir="rtl">
+<div class="header">
+<h1>ניקוד ומילות יחס</h1>
+</div>   
+<div class="row">
+<div class="col-3 col-s-3 menu">
+<ul>
+<li>משה מוציא וכלב מכניס</li>
+<li>ניקוד אותיות וכל"ב</li>
+<li>מילות יחס</li>
+<li>מילים נוספות</li>
+</ul>
+</div>
+<img id="img1" src="img2.jpg">
+<div id="div-1">
+<br>
+<br>
+<span class="span-title">משה מוציא וכלב מכניס</span>
+<br>
+<br>
+<b>אחרי אותיות משה - </b>האות א' נשמעת (משה מוציא את האות א')
+<br>
+<b>אחרי אותיות וכל"ב - </b>האות א' אינה נשמעת (כלב מכניס את האות א')
+<br>
+<u>דוגמאות:</u> כאדוננו, לאלוקינו - האות א' לא נשמעת.
+<br>
+<u>דוגמאות:</u> מאלוקים, האל - האות א' אכן נשמעת.
+<br>
+<br>
+<span class="span-title">ניקוד אותיות וכל"ב</span>
+<br>
+<br>
+<b>1)</b> ברירת המחדל היא שאותיות וכל"ב מנוקדות <mark>בשווא</mark> למעט כמה יוצאי דופן.
+<br>
+<b>2)</b> כאשר אותיות וכל"ב לפני חטף, הם יקבלו את <mark>ניקוד תנועת החטף</mark>.
+<br>
+<b>3)</b> אות וכל"ב לפני י' המנוקדת בשווא, תקבל <mark>חיריק</mark> והוא י' לא תשמע.
+<br>
+<br>
+<table>
+<tr>
+<th>מספר הכלל</th>
+<th>האות ו'</th>
+<th>האותיות כל"ב</th>
+</tr>
+<tr>
+<td><b>4)</b></td>
+<td>לפני שווא, אותיות שפתיות (בומ"פ) ינוקדו ב<mark>שורוק</mark>.</td>
+<td>לפני שווא, אותיות וכל"ב ינוקדו ב<mark>חיריק</mark>.</td>
+</tr>
+<tr>
+<td><b>5)</b></td>
+<td>לפני הבהרה מותאמת, האות ו' תנוקד ב<mark>קמץ</mark>.</td>
+<td>x</td>
+</tr>
+</table>
+</div>
+<div id="div-2">
+<br>
+<br>
+<span class="span-title">מילות יחס</span>
+<br>
+<br>
+<b>כלל:</b> כיצד נדע מהי הצורה הנכונה של מילת היחס? נעביר לגוף ראשון ונבדוק.
+<br>
+אם האות האחת לפני אחרונה במשפט תנוקד בחיריק, נבחר בצורה הקצרה.
+<br>
+<u>דוגמאות:
+</u>
+<br>
+אותכם/אתכם, הופך ל -אותי. ולכן התשובה היא - אתכם.
+<br>
+אצלהם/אצלם, הופך ל - אצלי. ולכן התשובה תהיה - אצלם.
+<br>
+אם האות האחת לפני אחרונה במשפט תנוקד בקמץ, נבחר בצורה הקצרה.
+<br>
+<u>דוגמאות:
+</u>
+<br>
+בלעדם/בלעדיהם, הופך ל - בלעדי. ולכן התשובה היא - בלעדיהם.
+<br>
+בפנם/בפניהם, הופך ל - בפני. ולכן התשובה היא - בפניהם.
+<br>
+<br>
+<span class="span-title">מילים נוספות</span>
+<br>
+<br>
+המילים - ממנו, איננו. האותיות ו' ינוקדו בשורוק.
+<br>
+המילה - איתך, האות ת' תנוקד בקמץ.
+<br>
+המילה - אצלכם, האות ל' תנוקד בצירה.
+<br>
+ניתן לומר עמם, עמהם, עמן, עמהן - הכול נכון.
+</div>
+</body>
+</html>

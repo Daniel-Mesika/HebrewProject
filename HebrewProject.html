@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> HebrewProject </title>
+<script>
+</script>
+</head>
+<style>
+    body {
+        background-color:whitesmoke;
+    }
+    .img-home {
+        position: absolute;
+        left: 20.83%;
+        bottom: 6%;
+        width: 57.29%;
+        height: 69.44%;
+    }
+    .h-1 {
+        position: absolute;
+        text-shadow:5px 5px #49b6b3;
+        font-size: 85px;
+        font-family: Arial;
+        left: 24.22%;
+        top: 5.55%;
+        border-style: ridge;
+        border-color: azure;
+        border-width: 20px;
+        padding: 8px;
+    }
+    #a-1 {
+        position: absolute;
+        left: 53.12%;
+        top: 39.35%;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        text-shadow: 3px 3px red;
+    }
+    #a-3 {
+        position: absolute;
+        left: 53.12%;
+        top: 56%;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        text-shadow: 3px 3px blueviolet;
+    }
+    #a-2 {
+        position: absolute;
+        left: 34.9%;
+        top: 39.35%;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        text-shadow: 3px 3px blue;
+    }
+    #a-4 {
+        position: absolute;
+        left: 31.5%;
+        top: 56%;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        text-shadow: 3px 3px green;
+    }
+    .a1 {
+        color: black;
+        text-decoration: none;
+    }
+    #demo {
+        direction: ltr;
+    }
+    div.dotted {
+        border-style: dotted; 
+        display: inline;
+        position: absolute;
+        top: 5%;
+        left: 44%;
+        font-size: 25px;
+    }
+    #demo {
+        color: red;
+        font-size: medium;
+        position: absolute;
+        top: 5%;
+        left: 100%;
+    }
+    
+</style>
+<body dir="rtl">
+<h1 class="h-1">ברוכים הבאים לעולם הלשון </h1>
+<img src="img5.png" class="img-home">
+<a href="page1.html" class="a1" id="a-1">תחביר</a>
+<a href="page2.html" class="a1" id="a-2">שם המספר</a>
+<a href="page3.html" class="a1" id="a-3">כתיבת חיבור</a>
+<a href="page4.html" class="a1" id="a-4">ניקוד ומילות יחס</a>
+
+<div id="demo-3"> למדתם היטב, רוצים לבחון את עצמכם? לחצו על הקישור הבא:
+    <a href="page6.html">הקישור הבא!</a></div>
+<br>
+<button type="button" onclick="document.getElementById('demo-3').style.fontSize='35px'">Click Me!</button>
+
+<div class="dotted">
+<div id="id-1"></div>
+<span id="demo-1"></span>
+<script>
+var d = new Date();
+document.getElementById("demo-1").innerHTML = d.getDate() + "/" + (d.getMonth() + 1) + "/" + d.getFullYear();
+</script>
+-
+<span id="demo-2"></span>
+<script>
+    
+    if (new Date().getHours() < 12 && new Date().getHours() > 3) {
+        document.getElementById("demo-2").innerHTML = "בוקר טוב!";
+        document.body.style.backgroundColor = "white";
+    }
+    else if (new Date().getHours() < 18 && new Date().getHours() > 11) {
+        document.getElementById("demo-2").innerHTML = "צהריים טובים!";
+        document.body.style.backgroundColor = "yellow";
+    }
+    else {
+        document.getElementById("demo-2").innerHTML = "לילה טוב!";
+        document.body.style.backgroundColor = "skyblue";
+    }
+</script>
+</div>
+</body>
+</html>

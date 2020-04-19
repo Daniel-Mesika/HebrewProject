@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>שם המספר</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color:black;
+  color:blue;;
+  padding: 5px;
+  text-align:center;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: blue;
+  color:black;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color:black;
+  color: white;
+}
+li {
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+#img1 {
+    position: absolute;
+    left: 40px;
+    top: 350px;
+    width: 400px;
+    height: 500px;
+}
+.span-title {
+    position: absolute;
+    right: 170px;
+    color: blue;
+    font-size: 25px;
+}
+#div-1 {
+    position: absolute;
+    right: 15px;
+    font-size: 20px;
+}
+#div-2 {
+    position: absolute;
+    right: 780px;
+    font-size: 25px;
+}
+table {
+border-collapse: collapse;
+  width: 500px;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: blue;
+  color: white;
+}
+</style>
+</head>
+<body dir="rtl">
+<div class="header">
+<h1>שם המספר</h1>
+</div>   
+<div class="row">
+<div class="col-3 col-s-3 menu">
+<ul>
+<li>זכר ונקבה</li>
+<li>כללים מיוחדים</li>
+<li>ריבוי המספר</li>
+<li>מספר מעורב</li>
+</ul>
+</div>
+<img id="img1" src="img3.png">
+<div id="div-1">
+<br>
+<span class="span-title">זכר ונקבה</span>
+<br>
+<br>
+<br>
+<table>
+    <tr>
+      <th>המספר</th>
+      <th>זכר</th>
+      <th>נקבה</th>
+    </tr>
+    <tr>
+      <td>1, 2</td>
+      <td>אחד, שניים</td>
+      <td>אחת, שתיים</td>
+    </tr>
+    <tr>
+      <td>3 - 10</td>
+      <td>שלושה, עשרה</td>
+      <td>שלוש, עשר</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>שמונה (עם קמץ)</td>
+      <td>שמונה (עם צירה)</td>
+    </tr>
+    <tr>
+      <td>11+</td>
+      <td>אחד עשר, שלושה עשר</td>
+      <td>אחת עשרה, שתים עשרה</td>
+    </tr>
+    <tr>
+      <td>מאות</td>
+      <td>מאה, מאתיים, ארבע מאות</td>
+      <td>מאה, מאתיים, ארבע מאות</td>
+    </tr>
+    <tr>
+        <td>אלפים</td>
+        <td>אלף, אלפיים, ארבעת אלפים</td>
+        <td>שמונת אלפים, עשרת אלפים</td>
+    </tr>
+    <tr>
+        <td>מליונים</td>
+        <td>תשעה מליון, עשרים וארבעה מליון</td>
+        <td>חמישה מליון, שבעה מליונים</td>
+    </tr>
+  </table>
+<br>
+<mark><u><b>כללים חשובים!</b></u></mark>
+<br>
+את המליונים תמיד נאמר בזכר.
+<br>
+את המאות תמיד נאמר בנקבה.
+<br>
+את האלפים תמיד נאמר בזכר.
+<br>
+<br>
+<span class="span-title">כללים מיוחדים</span>
+<br>
+<br>
+<b>תאריך - </b>נאמר תמיד בזכר, עברי ולועזי. לדוגמא: חמישה בנובמבר.
+<br>
+<b>פי - </b>אחרי המילה "פי" המספר יבוא בזכר, למשל: פי שלושה.
+<br>
+<b>פעם - </b>אחרי המילה פעם, המספר יבוא בנקבה. למשל: פעם אחת.
+<br>
+<b>גיל - </b>את הגיל נאמר בנקבה, כיוון שסופרים שנים, למשל: גיל שלוש עשרה.
+<br>
+<b>מספר סתמי - </b>את המספר הסתמי נאמר בנקבה, על מנת לזהות מספר סתמי, יש אמצעי זיהוי.
+<br>
+<u>אמצעי הזיהוי: </u>מומלץ להוסיף את המילה - מספר, לפני המספר. אם המשפט נותר תקין, זהו מספר סתמי.
+<br>
+<u>דוגמא:</u> קו מספר 501 - קו מספר חמש מאות ואחת.
+</div>
+<div id="div-2">
+<br>
+<br>
+<span class="span-title">ריבוי המספר</span>
+<br>
+<br>
+מ - 2 עד 10, נאמר את שם העצם ברבים. לדוגמא: שני אחוזים.
+<br>
+מ - 11 ומעלה, ניתן לומר את שם העצם היחיד וברבים. <br>לדוגמא: חמשה עשר איש/אנשים.
+<br>
+רק באלפים, מ - 11 ומעלה, נאמר את שם העצם <mark>אך ורק </mark>ביחיד. <br>לדוגמא: אחד עשר אלפים.
+<br>
+את המליונים, ניתן לספור ברבים וביחיד כבר מהמספר - 2, <br>כי זו מילה לועזית.
+<br>
+<br>
+<span class="span-title">מספר מעורב</span>
+<br>
+<br>
+מספר שמורכב משבר וממספר שלם, נקרא מספר מעורב.
+<br>
+<u>הכלל:</u> מספר שלם + שם עצם + שבר. (זהו הסדרר הנכון).
+<br>
+<u>דוגמאות:</u>
+<br>
+3.5 כדורים = שלושה כדורים וחצי.
+<br>
+20.5 שקלים = עשרים שקלים וחצי
+<br>
+<b>חצי - </b>את המילה חצי נאמר בסמיכות - עם חטף פתח, ברגיל - עם צירה.
+<br> 
+<b>עד רבע - </b>נספור את החלקים בזכר.
+<b>מחמישית ומעלה - </b> נספור בנקבה.
+</div>
+</body>
+</html>
